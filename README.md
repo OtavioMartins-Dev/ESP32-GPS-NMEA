@@ -1,52 +1,77 @@
-Leitura de Coordenadas GPS Direto das Sentenças NMEA com ESP32 e FreeRTOS
-O que o projeto faz
-Este projeto demonstra como extrair coordenadas GPS diretamente das sentenças NMEA fornecidas por um módulo GPS conectado a um ESP32. Utilizando uma tarefa do FreeRTOS, o código lê continuamente os dados do GPS, processa as sentenças NMEA e atualiza uma estrutura de dados com as informações de latitude, longitude, altitude, número de satélites, entre outros.
+# 📍 Leitura de Coordenadas GPS Direto das Sentenças NMEA com ESP32 e FreeRTOS
 
-Por que o projeto é útil
-Ao ler e processar diretamente as sentenças NMEA, este projeto oferece uma compreensão aprofundada de como os dados GPS são transmitidos e interpretados. Isso permite aos desenvolvedores:
+![PlatformIO](https://img.shields.io/badge/PlatformIO-ESP32-orange?logo=platformio)
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-Supported-blue?logo=freertos)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Personalização: Adaptar o processamento de dados GPS conforme as necessidades específicas de suas aplicações.
-Eficiência: Evitar o uso de bibliotecas externas, permitindo um controle mais direto e potencialmente reduzindo o uso de recursos.
-Educação: Aprender sobre o protocolo NMEA e como implementar multitarefas com FreeRTOS no ESP32.
-Como os usuários podem começar a usar o projeto
-Para iniciar com este projeto:
+## 📌 O que o projeto faz
 
-Hardware Necessário:
+Este projeto demonstra como extrair coordenadas GPS diretamente das sentenças NMEA fornecidas por um módulo GPS conectado a um **ESP32**.  
+Utilizando **FreeRTOS**, uma tarefa dedicada lê continuamente os dados do GPS, processa as sentenças **NMEA**, e atualiza uma estrutura de dados com:
 
-ESP32, 
-Módulo GPS compatível que transmita sentenças NMEA e 
-Cabos de conexão 
+✅ Latitude e Longitude  
+✅ Altitude  
+✅ Número de satélites visíveis  
+✅ Precisão dos dados  
 
-Configuração do Ambiente de Desenvolvimento:
+## 💡 Por que este projeto é útil?
 
-Instale o PlatformIO como extensão do Visual Studio Code ou utilize a Arduino IDE configurada para o ESP32.
-Conexões de Hardware:
+Ao processar diretamente as sentenças NMEA, o projeto permite:
 
-Conecte o pino TX do módulo GPS ao pino RX2 (GPIO16) do ESP32.
-Conecte o pino RX do módulo GPS ao pino TX2 (GPIO17) do ESP32.
-Alimente o módulo GPS com 3.3V ou 5V, conforme especificado pelo fabricante, e conecte os GNDs em comum.
-Código Fonte:
+🔹 **Maior controle**: Evita bibliotecas externas, dando mais flexibilidade ao desenvolvedor  
+🔹 **Eficiência**: Código otimizado para rodar em multitarefas com **FreeRTOS**  
+🔹 **Educação**: Ensina a trabalhar com **NMEA** e gerenciamento de tarefas no **ESP32**  
 
-Clone este repositório: git clone https://github.com/seu_usuario/seu_repositorio.git
-Abra o projeto no PlatformIO ou Arduino IDE.
-Compile e faça o upload do código para o ESP32.
-Execução:
+## 🚀 Como começar
 
-Abra o monitor serial configurado para 115200 baud.
-Observe as informações GPS sendo atualizadas continuamente no terminal.
-Onde os usuários podem obter ajuda com o projeto
-Se você encontrar dificuldades ou tiver dúvidas sobre este projeto:
+### 🔧 Requisitos de Hardware
 
-Documentação Oficial:
+- ✅ ESP32  
+- ✅ Módulo GPS (exemplo: NEO-6M, u-blox)  
+- ✅ Jumpers para conexão  
 
-Documentação do ESP32
-Referência do FreeRTOS
-Comunidades e Fóruns:
+### ⚙️ Configuração do Ambiente
 
-Fórum do ESP32
-Stack Overflow (utilize tags como esp32, freertos, nmea)
-Contato Direto:
+1️⃣ Instale o **[PlatformIO](https://platformio.org/)** no Visual Studio Code (ou use a [Arduino IDE](https://www.arduino.cc/en/software))  
+2️⃣ Clone este repositório:  
 
-Abra uma issue neste repositório detalhando o problema encontrado.
-Quem mantém e contribui com o projeto
-Este projeto é mantido por Otávio Martins. Contribuições são bem-vindas! Sinta-se à vontade para forkear o repositório e enviar pull requests. Para questões ou sugestões, abra uma issue ou entre em contato diretamente.
+   ```bash
+   git clone https://github.com/OtavioMartins-Dev/ESP32-GPS-NMEA.git
+   cd ESP32-GPS-NMEA
+   ```
+
+3️⃣ Conecte o **módulo GPS** ao **ESP32**:  
+
+   | Módulo GPS | ESP32  |
+   |------------|--------|
+   | TX        | GPIO16 (RX2) |
+   | RX        | GPIO17 (TX2) |
+   | VCC       | 3.3V ou 5V  |
+   | GND       | GND  |
+
+4️⃣ Compile e faça o **upload do código** para o ESP32  
+5️⃣ Abra o **Monitor Serial** (`115200 baud`) para ver os dados GPS sendo atualizados  
+
+## ❓ Onde obter ajuda?
+
+📚 **Documentação Oficial**  
+- [ESP32 Docs](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/)  
+- [FreeRTOS Reference](https://www.freertos.org/)  
+
+🌍 **Comunidades**  
+- [Fórum do ESP32](https://www.esp32.com/)  
+- [Stack Overflow](https://stackoverflow.com/) (`esp32`, `freertos`, `nmea`)  
+
+💬 **Suporte no GitHub**  
+- Abra uma **issue** neste repositório detalhando seu problema  
+
+## 👨‍💻 Manutenção e Contribuições
+
+Este projeto é mantido por [**OtávioMartins-Dev**](https://github.com/OtavioMartins-Dev).  
+Contribuições são bem-vindas! Faça um **fork**, implemente melhorias e envie um **pull request**.  
+
+🔹 **Dúvidas ou sugestões?** Abra uma **issue** ou entre em contato.  
+
+---
+
+📌 *Feito com ❤️ e código limpo para a comunidade ESP32!*
