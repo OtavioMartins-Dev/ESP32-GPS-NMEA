@@ -13,9 +13,10 @@ Para iniciar com este projeto:
 
 Hardware Necessário:
 
-ESP32, 
-Módulo GPS compatível que transmita sentenças NMEA, 
-Cabos de conexão e
+ESP32 
+Módulo GPS compatível que transmita sentenças NMEA 
+Cabos de conexão 
+
 Configuração do Ambiente de Desenvolvimento:
 
 Instale o PlatformIO como extensão do Visual Studio Code ou utilize a Arduino IDE configurada para o ESP32.
