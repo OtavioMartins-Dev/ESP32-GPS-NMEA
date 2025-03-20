@@ -1,4 +1,4 @@
-# 📍 Leitura de Coordenadas GPS Direto das Sentenças NMEA com ESP32 e FreeRTOS
+# Leitura de Coordenadas GPS Direto das Sentenças NMEA com ESP32 e FreeRTOS
 
 ![PlatformIO](https://img.shields.io/badge/PlatformIO-ESP32-orange?logo=platformio)
 ![FreeRTOS](https://img.shields.io/badge/FreeRTOS-Supported-blue?logo=freertos)
