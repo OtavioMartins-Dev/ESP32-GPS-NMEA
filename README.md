@@ -13,8 +13,8 @@ Para iniciar com este projeto:
 
 Hardware Necessário:
 
-ESP32 
-Módulo GPS compatível que transmita sentenças NMEA 
+ESP32, 
+Módulo GPS compatível que transmita sentenças NMEA e 
 Cabos de conexão 
 
 Configuração do Ambiente de Desenvolvimento:
